@@ -1,0 +1,15 @@
+.project_box {
+    height: 200px;
+}
+.text-spacegray {
+    color: rgba(0, 0, 0, 0.4);
+}
+.project_box h3 {
+    margin-left: -16px;
+    border-left: 4px solid #17a2b8;
+    padding-left: 15px;
+}
+.title-size {
+    font-size: 20px;
+}
+

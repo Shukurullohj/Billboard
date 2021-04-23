@@ -36,4 +36,8 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+     function projects()
+     {
+        return $this->hasMany(Project::class, 'user_id')->latest('updated_at');
+     }
 }
