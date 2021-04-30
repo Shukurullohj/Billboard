@@ -11,7 +11,7 @@ class ProjectController extends Controller
  public function index()
  {
 
-  $projects = auth()->user()->projects()->orderBy('updated_at', 'desc')->get();
+  $projects = auth()->user()->accessibleProjects();
   return view('projects.index', compact('projects'));
 
 }
@@ -31,6 +31,12 @@ public function edit(Project $project)
 public function store()
 {
  $project = auth()->user()->projects()->create($this->validateRequest());
+ if(request()->wantsJson()) {
+    return ['message' => $project->path()];
+ }
+ if($tasks = request('tasks'))  {
+        $project->addTasks($tasks);
+ }
  return redirect($project->path());
 }
  public function destroy(Project $project)

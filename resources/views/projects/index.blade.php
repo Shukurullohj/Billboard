@@ -4,7 +4,7 @@
     
         <div class="d-flex align-items-center mb-5 mx-5">
             <h3 class="mr-auto text-spacegray">My Projects</h3>
-            <a class="btn btn-info px-5" href="/projects/create">Create Project</a>
+            <a class="btn button px-5" href="/projects/create" @click.prevent="$modal.show">Create Project</a>
         </div>
         
         <div class="row px-5">
@@ -18,7 +18,7 @@
         @endforelse 
         </div> 
           
-
+        <new-project-modal></new-project-modal>
           
    
 </body>

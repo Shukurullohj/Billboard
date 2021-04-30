@@ -1,15 +1,67 @@
 .project_box {
     height: 200px;
 }
-.text-spacegray {
-    color: rgba(0, 0, 0, 0.4);
-}
 .project_box h3 {
+    padding-bottom: 16px;
+    padding-top: 16px;
     margin-left: -16px;
     border-left: 4px solid #17a2b8;
     padding-left: 15px;
 }
 .title-size {
     font-size: 20px;
+}
+.theme-dark .card {  
+    background-color: #1f2027;
+}
+.theme-dark .page {
+    background-color: #17181e;
+} 
+.theme-dark .button {
+   color: #fff;
+    background-color: #59b6f9;
+}
+.theme-dark {
+    color: #fff;
+}
+.theme-dark a{
+    color: #fff;
+    text-decoration: none;
+}
+.theme-light .header {
+    background-color: #fff;
+}
+.theme-light .page {
+    background-color: #f5f6f9;
+} 
+.theme-light .card {  
+    background-color: #fff;
+}
+.theme-light .button {
+    color: #fff;
+    background-color: #59b6f9;
+}
+.theme-white{
+    color: #222 !important;
+}
+.theme-white a {
+    color: #222;
+    text-decoration: none;
+}
+.theme-light {
+    --page-background-color: ;
+    --card-background-color: white;
+    --button-background-color: ;
+    --header-background-color: white;
+
+    --text-default-color: #222;
+    --text-accent-color: #47cdff;
+    --text-accent-light-color: #8ae2fe;
+    --text-muted-color: rgba(0, 0, 0, 0.3);
+    --text-muted-light-color: rgba(255, 255, 255, 0.1);
+    --text-muted-light-color: #e1e6e8;
+}
+.act {
+    overflow: hidden;
 }
 

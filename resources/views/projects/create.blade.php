@@ -5,7 +5,7 @@
     <div class="container">
     <h1 class="my-3">Create Project</h1>
     @include('projects._form', [
-    'project' => 
+    'project' =>
     new App\Project,
     'textButton' => 'Create Project'
     ])
